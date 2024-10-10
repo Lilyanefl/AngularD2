@@ -1,0 +1,22 @@
+<div class="container">
+  <div class="row">
+    <ng-container *ngFor="let post of postArr">
+      <div class="col-12 col-lg-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">{{ post.title }}</h5>
+            <p class="card-text">
+              {{ post.body }}
+            </p>
+            <ul class="list-group list-group-flush">
+              <li *ngFor="let tag of post.tags" class="list-group-item">
+                {{ tag }}
+              </li>
+            </ul>
+            <a routerLink="/details" class="btn btn-primary">Leggi</a>
+          </div>
+        </div>
+      </div>
+    </ng-container>
+  </div>
+</div>
