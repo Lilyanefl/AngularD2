@@ -12,7 +12,9 @@
             {{ tag }}
           </li>
         </ul>
-        <a routerLink="/details" class="btn btn-primary">Leggi</a>
+        <a [routerLink]="['/details', featuredPost.id]" class="btn btn-primary"
+          >Leggi</a
+        >
       </div>
     </div>
   </div>
@@ -33,7 +35,9 @@
                 {{ tag }}
               </li>
             </ul>
-            <a routerLink="/details" class="btn btn-primary">Leggi</a>
+            <a [routerLink]="['/details', post.id]" class="btn btn-primary"
+              >Leggi</a
+            >
           </div>
         </div>
       </div>

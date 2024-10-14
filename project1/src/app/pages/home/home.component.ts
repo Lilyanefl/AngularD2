@@ -16,7 +16,7 @@ export class HomeComponent implements OnInit {
       .then((res) => <Promise<iJSONresponse>>res.json())
       .then((res) => {
         this.featuredPost = res.posts[0];
-        this.postArr = res.posts.slice(0, 4);
+        this.postArr = res.posts.slice(1, 5);
       });
   }
 }
